@@ -1,11 +1,12 @@
 import { Suspense } from "react";
-import DashboardLayout from "../layouts/DashboardLayout";
+
 import Playground from "../pages/Playground";
+import App from "../App";
 
 const Routes = [
   {
     path: "/",
-    element: <DashboardLayout />,
+    element: <App />,
     children: [
       {
         path: "playground",

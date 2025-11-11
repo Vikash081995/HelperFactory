@@ -1,11 +1,5 @@
-import { Outlet } from "react-router-dom";
-
 const DashboardLayout = () => {
-  return (
-    <div>
-      <Outlet />
-    </div>
-  );
+  return <div>Dashboard</div>;
 };
 
 export default DashboardLayout;
