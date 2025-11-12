@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+.btn {
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: x-small;
+    background-color: bisque;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: rgb(194, 219, 115);
+    border-radius: 11px;
+}
+
+

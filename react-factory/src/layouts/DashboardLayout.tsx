@@ -1,5 +1,7 @@
+import Header from "../components/Header/Header";
+
 const DashboardLayout = () => {
-  return <div>Dashboard</div>;
+  return <Header />;
 };
 
 export default DashboardLayout;
