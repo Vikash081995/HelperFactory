@@ -1,17 +1,19 @@
-// import Card from "../components/Card/Card";
-// import UseStatePractice from "../CompleteDemos/Hooks/01.UseStatePractice";
-// import UseStateWithArray from "../CompleteDemos/Hooks/02.UseStateWithArray";
-// import UseStateWithObjects from "../CompleteDemos/Hooks/03.UseStateWithObjects";
-// import UseStateWithPrevState from "../CompleteDemos/Hooks/04.UseStateWithPrevState";
+// import UseEffectBasicsExample from "../CompleteDemos/Hooks/useEffect/1.UseeffectBasics";
+// import SimpleForm from '../CompleteDemos/Forms/1.SimpleForm';
+import FormUsingRefs from '../CompleteDemos/Forms/2.FormUsingRefs';
+import ConsoleToUi from '../components/ConsoleToUI/ConsoleToUi';
+import classes from "./Playground.module.css"
 
 const Playground = () => {
   return (
-    <>
-      {/* <UseStatePractice /> */}
-      {/* <UseStateWithArray /> */}
-      {/* <UseStateWithObjects /> */}
-      {/* <UseStateWithPrevState /> */}
-    </>
+    <div className={classes.playgroundContainer}>
+      {/* <UseEffectBasicsExample /> */}
+      {/* <SimpleForm /> */}
+      <FormUsingRefs />
+      <div className={classes.ConsoleToUi}>
+      <ConsoleToUi />
+      </div>
+    </div>
   );
 };
 
