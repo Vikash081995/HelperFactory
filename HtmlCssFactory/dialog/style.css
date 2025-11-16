@@ -1,0 +1,16 @@
+
+dialog{
+    border-radius: 10px;
+}
+
+dialog::backdrop{
+    animation: fade 0.5s ease forwards;
+}
+
+@keyframe fade{
+  0% { background-color: transparent; }
+  100% { background-color: rgb(0 57 24 / 0.6); }
+}
+button:focus {
+  outline: 2px solid #f90;
+}

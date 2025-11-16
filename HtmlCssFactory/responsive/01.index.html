@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First responsive page</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media screen and (min-width:800px) {
+            body {
+                border-left: 4px solid #f9f9f9;
+                border-right: 4px solid #f9f9f9;
+                padding: 1rem;
+            }
+
+            .IntroWrapper {
+                display: flex;
+                gap: 0 20px;
+                align-items: center;
+            }
+
+            .IntroText {
+                flex: 1 1 50%;
+                font-size: 2.5rem;
+                text-align: left;
+                padding: 0.5rem;
+            }
+
+            .MoneyShotImg {
+                filter: drop-shadow(0 0 20px #0008);
+                border: 0;
+            }
+
+            .Ingredients {
+                font-size: 0.9rem;
+                float: right;
+                background-color: #ffffdf;
+                border: 9px solid #debb71;
+                padding: 1rem;
+                border-radius: 3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Header">
+        <a href="/" class="LogoWrapper">
+            <img src="https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/12d5d6fd-24f6-51a9-8927-6aa0e3f9e615/59a8cbc7-95fc-5b34-8d83-53f7729a6786.jpg"
+                alt="Scone" />
+        </a>
+        <h1 class="Strap">Scones: the most resplendent of snacks</h1>
+    </div>
+    <div class="IntroWrapper">
+        <h2 class="IntroText">
+            Occasionally maligned and misunderstood; the scone is a quintessentially
+            British classic.
+        </h2>
+        <div class="MoneyShot">
+            <p class="ImageCaption">Incredible scones, picture from Wikipedia</p>
+        </div>
+    </div>
+    <p>Recipe and serving suggestions follow.</p>
+    <div class="Ingredients">
+        <h3 class="SubHeader">Ingredients</h3>
+        <ul></ul>
+    </div>
+    <div class="HowToMake">
+        <h3 class="SubHeader">Method</h3>
+        <ol class="MethodWrapper"></ol>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            container-type: inline-size;
+            padding: 1rem;
+            border: 1px solid #ccc
+        }
+
+        /* container query */
+        @container (min-width:400px) {
+            .title {
+                font-size: 2rem;
+                color: blue;
+            }
+        }
+
+        @container (min-width:600px) {
+            .title {
+                font-size: 3rem;
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="card">
+        <div class="title">My Article</div>
+        <p>Some content .......</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.card {
+    container-type: inline-size;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.card img {
+    width: 20vw;
+}
+
+@container (min-width:450px) {
+    .card {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 1rem;
+    }
+}

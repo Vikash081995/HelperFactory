@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::marker {
+            content: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- target attribute  -->
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+    <a href="#" style="color: black;">go to bottom</a>
+    <!-- details -->
+    <details>
+        <summary>I ate 15 scones in one day</summary>
+        <p>Of course I didn’t — that would be too much!</p>
+    </details>
+    <p>open by default</p>
+    <details open>
+        <summary>See the truth</summary>
+        <p>Okay, maybe just 3 scones.</p>
+    </details>
+    <h3>The address Element</h3>
+    <footer>
+        <address>
+            Contact: <a href="mailto:vikash@example.com">vikash@example.com</a>
+        </address>
+    </footer>
+    <!-- Text leve semantics -->
+    <h3>Text Level Semantics</h3>
+    <p><strong>Warning:</strong> Do not remove this file.</p>
+
+    <p>This <em>really</em> matters.</p>
+
+    <p><i>Raphus cucullatus</i> is the dodo bird.</p>
+
+    <button>French Fries <i>No Salt Added</i></button>
+</body>
+
+</html>
