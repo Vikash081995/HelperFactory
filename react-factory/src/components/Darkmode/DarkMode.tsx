@@ -1,5 +1,5 @@
 import classes from "./DarkMode.module.css";
-import { useTheme } from "../../CompleteDemos/ThemeContext";
+import { useTheme } from "../../demos/ThemeContext";
 
 const DarkMode = () => {
   const { darkMode, toggleTheme } = useTheme();
