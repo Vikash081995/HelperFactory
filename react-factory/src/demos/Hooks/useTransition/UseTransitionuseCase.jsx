@@ -1,8 +1,6 @@
 import { useState, useTransition, lazy, Suspense } from "react";
 const SlowComponent = lazy(() => import("../Components/SlowComponent"));
 
-import React from "react";
-
 function UseTransitionHookExample() {
   const [text, setText] = useState("");
   const [items, setItems] = useState([]);
