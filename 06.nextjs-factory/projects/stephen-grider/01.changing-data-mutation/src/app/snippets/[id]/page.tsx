@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import Link from "next/link";
 import { db } from "@/db";
 import { notFound } from "next/navigation";
 
@@ -18,7 +19,17 @@ export default async function SnippetShowPage(props: SnippetShowPageProps) {
   if (!snippet) {
     return notFound();
   }
-  return <div>{snippet.title}</div>;
+  return (
+    <div>
+      <div>
+        <h1>{snippet.title}</h1>
+        <div>
+          <Link href={`/snippets/${snippet.id}/edit`}>Edit</Link>
+          <Link href="/snippets">Delete</Link>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export async function generateStaticParams() {

@@ -1,18 +1,19 @@
-'use client'
+"use client";
 import { useActionState, startTransition } from "react";
-import * as actions from '@/actions'
+import * as actions from "@/actions";
 
 export default function SnippetsCreatePage() {
+  const [formState, action] = useActionState(actions.createSnippets, {
+    message: "",
+  });
 
-  const [formState,action] = useActionState(actions.createSnippets,{message:''})
- 
-    function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-      event.preventDefault();
-      const formData = new FormData(event.currentTarget);
-      startTransition(() => {
-        action(formData);
-      });
-    }
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    startTransition(() => {
+      action(formData);
+    });
+  }
   return (
     <>
       <form onSubmit={handleSubmit}>

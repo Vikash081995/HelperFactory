@@ -18,7 +18,7 @@ export default function SnippetEditForm({ snippet }: SnippetEditFormProps) {
 
   const editSnippetAction = actions.editSnippet.bind(null, snippet.id, code);
 
-  const handleEditorChange = (value: string='') => {
+  const handleEditorChange = (value: string = "") => {
     setCode(value);
   };
 
@@ -28,11 +28,10 @@ export default function SnippetEditForm({ snippet }: SnippetEditFormProps) {
       <Editor
         height="40vh"
         language="javascript"
-        onChange={  handleEditorChange}
+        onChange={handleEditorChange}
       />
       <form action={editSnippetAction}>
-        <button type='submit' >Save</button>
-
+        <button type="submit">Save</button>
       </form>
     </div>
   );

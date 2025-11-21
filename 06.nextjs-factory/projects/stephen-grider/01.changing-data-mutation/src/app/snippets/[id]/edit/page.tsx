@@ -7,7 +7,7 @@ interface SnippetEditProps {
   };
 }
 
-export default function SnippetEditPage(props: SnippetEditProps) {
+export default async function SnippetEditPage(props: SnippetEditProps) {
   const id = parseInt(props.params.id);
   const snippet = await db.snippet.findFirst({
     where: { id },
