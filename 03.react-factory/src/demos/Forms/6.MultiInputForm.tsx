@@ -7,11 +7,11 @@ const MultiInputForm = () => {
     lastName: "",
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log(inputs.firstName);
   };

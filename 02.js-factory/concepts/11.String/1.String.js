@@ -21,11 +21,10 @@ foo.concat(bar); //"foobar"
 "a".concat("b", "c"); //"abc"
 
 //Strings can be concatenated with non-string variables but will type-convert the non-string to a string.
-var string='string';
+var string = "string";
 var number = 32;
 var boolean = true;
-console.log(string + number+boolean); //"string32true"
-
+console.log(string + number + boolean); //"string32true"
 
 //String template literals
 var greeting = "Hello";

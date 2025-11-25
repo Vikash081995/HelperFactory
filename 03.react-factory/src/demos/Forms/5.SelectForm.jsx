@@ -9,7 +9,7 @@ const SelectForm = () => {
   };
   const handleChange = (e) => {
     setSelectedVal(e.target.value);
-    console.log(selectedVal)
+    console.log(selectedVal);
   };
   return (
     <>

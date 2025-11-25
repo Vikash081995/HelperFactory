@@ -1,5 +1,4 @@
 //ES5 Function Constructor
-
 function Person(name) {
   this.name = name;
 }

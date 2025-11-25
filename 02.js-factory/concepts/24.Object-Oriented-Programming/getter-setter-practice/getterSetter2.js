@@ -15,7 +15,8 @@ class User {
   }
 }
 
-const userName = new User("John","Smith");
+const userName = new User("John", "Smith");
 console.log(userName.fullName);
+
 userName.fullName = "Cherilyn Sarkisian";
 console.log(userName.fullName);
